@@ -68,7 +68,7 @@ function Login() {
 
   return (
     <div>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt='twitter_logo' style={logo}></img>
+      <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt='twitter_logo' style={logo}></img>
       <form onSubmit={handleSubmit} style={formStyle}>
         <input type="text" className="col-xs-4 form-control" id="exampleInputEmail1"  placeholder="Username" onChange={(event)=> setUsername(event.target.value)} required/><br />
         <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" onChange={(event)=> setPassword(event.target.value)} required/><br />

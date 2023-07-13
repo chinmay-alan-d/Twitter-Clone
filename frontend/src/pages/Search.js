@@ -24,7 +24,7 @@ function Search() {
         iUsername : auth.username
       }).then( (response)=>{
         setUsers(response.data);
-        // console.log(response.data);
+        console.log(response.data);
         console.log(users);
       })
     }
@@ -44,7 +44,7 @@ function Search() {
               }
 
               return(
-                <div  className="card mt-3 col-md-40" style={{width: "200px",position : 'relative',left : '42.5%',top : '55px',height : '100px'}} key={Date.now().toString(36) + Math.random().toString(36)} onClick={handleClick} >
+                <div  className="card mt-3 col-md-40" style={{width: "200px",position : 'relative',left : '42.5%',top : '40px',height : '100px'}} key={Date.now().toString(36) + Math.random().toString(36)} onClick={handleClick} >
                     <img className="card-img-top" src={user.image} alt="image__" style={{width : '40px'}}></img>
                     <div className="card-body" style={{position : 'relative', right : '-45px',top : '-50px'}}>
                       <h6 className="card-text-right">{user.name}</h6>

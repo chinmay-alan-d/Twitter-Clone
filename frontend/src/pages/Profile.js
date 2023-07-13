@@ -9,6 +9,9 @@ const styleDiv = {
   top : '15%',
   left : '30%'
 }
+const profileStyle = {
+  maxWidth : 159
+}
 
 function Profile() {
   const auth = useAuth();
@@ -48,7 +51,7 @@ function Profile() {
       <div className="card mb-3" style={styleDiv}>
         <div className="row no-gutters">
           <div className="col-md-4">
-            <img src={auth.image} className="card-img" alt="Profile_pic" />
+            <img src={auth.image} style={profileStyle} className="card-img" alt="Profile_pic" />
           </div>
           <div className="col-md-8">
             <div className="card-body">

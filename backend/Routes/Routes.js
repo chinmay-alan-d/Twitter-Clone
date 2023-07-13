@@ -91,9 +91,11 @@ router.put('/tweet', async (req,res) =>{
 
 router.post('/search', async(req,res)=> {
     let sName = req.body.search;
+    console.log(req.body);
     let users = [];
     try {
-        let search = await Tweet.find({ name : {$regex : sName,$options : "$i"}});
+        let search = await Tweet.find({ name : {$regex : sName}});
+        console.log(search);
         for await(const query of search){
             if(query.username === req.body.iUsername){
                 //do nothing
@@ -109,7 +111,7 @@ router.post('/search', async(req,res)=> {
         }
         res.json(users);
     } catch (error) {
-        res.send('')
+        res.send([])
     }
 })
 

@@ -72,7 +72,7 @@ function Signup() {
 
   return (
     <div>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt='twitter_logo' style={logo}></img>
+      <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt='twitter_logo' style={logo}></img>
       <form onSubmit={handleSubmit} style={formStyle}>
         <input type="text" className="form-control"  placeholder="name" onChange={(event)=> setName(event.target.value)} required/><br />
         <input type="text" className="form-control"  placeholder="Username" onChange={(event)=> setUsername(event.target.value)} required/><br />

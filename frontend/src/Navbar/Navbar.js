@@ -10,7 +10,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <nav className="navbar navbar-light bg-light">
             <Link to="/">
-                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png' style={logo} alt="logo"></img>
+                <img src='https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png' style={logo} alt="logo"></img>
             </Link>
         </nav>
         <div className="collapse navbar-collapse" id="navbarNav">
